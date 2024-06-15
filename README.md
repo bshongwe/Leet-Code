@@ -1,2 +1,2 @@
-# Leet-Code
+# 📝 LeetCode Submissions 🚀
 Tracking my Leet Code Challenge submissions
