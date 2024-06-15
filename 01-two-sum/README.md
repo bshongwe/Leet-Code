@@ -29,3 +29,10 @@ Explanation: Because nums[0] + nums[1] == 6, we return [0, 1]. ✅
 - `-10^9 <= nums[i] <= 10^9` 🔢
 - `-10^9 <= target <= 10^9` 🎯
 - Only one valid answer exists. ✔️
+
+## Solution 1:
+- **Input Parameters**: The function `twoSum` takes in an integer array `nums`, its size `numsSize`, target sum `target`, and a pointer `returnSize` to set the size of the returned array.
+- **Looping Strategy**: It uses nested loops (`i` and `j`) to iterate through possible pairs of indices in the `nums` array.
+- **Condition Check**: Checks if the sum of elements at indices `i` and `j` equals `target`.
+- **Memory Allocation**: If a solution is found, it allocates memory (`malloc`) for a new integer array `res` of size 2, stores `i` and `j` in `res`, and returns `res`.
+- **Failure Case**: If no solution is found after iterating through all pairs, it sets `*returnSize` to 0 and returns `NULL`.
